@@ -957,7 +957,7 @@ with st.expander("Lihat Perbandingan Membership Functions — Evolusi NB1 → NB
     """, unsafe_allow_html=True)
 
     fig = plot_mf_comparison()
-    st.pyplot(fig, width='stretch')
+    st.pyplot(fig, use_container_width=True)
     plt.close(fig)
 
     st.markdown(
